@@ -18,6 +18,6 @@ echo "Installing postgresql-9.2 redis-server nodejs nginx ruby1.9.3"
 apt-get install -y postgresql-9.2 redis-server nodejs nginx ruby1.9.3
 
 echo "Creating postgres roles via create_role.sql"
-su postgres
+su -m postgres
 psql -f /vagrant/create_role.sql
 exit
