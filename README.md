@@ -9,3 +9,8 @@ A 64-bit Ubuntu 12.04 Vagrant box with the following
 - nodejs (0.10.x)
 - nginx (stable)
 - imagemagick
+
+Install
+====
+
+Just run `vagrant up`
