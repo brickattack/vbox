@@ -14,8 +14,8 @@ apt-add-repository -y ppa:chris-lea/node.js
 echo "Updating packages..."
 apt-get update
 
-echo "Installing postgresql-9.2 redis-server nodejs nginx ruby1.9.3"
-apt-get install -y postgresql-9.2 redis-server nodejs nginx ruby1.9.3
+echo "Installing postgresql-9.2 redis-server nodejs nginx ruby1.9.3 imagemagick"
+apt-get install -y postgresql-9.2 redis-server nodejs nginx ruby1.9.3 imagemagick
 
 echo "Creating postgres roles via create_role.sql..."
 su postgres -c "psql -f /vagrant/create_role.sql"
