@@ -66,16 +66,7 @@ sudo apt-get install -y nginx
 echo "************************************************************"
 echo "Installing build-essential, chrpath, git, libssl, and libfontconfig1"
 echo "************************************************************"
-sudo apt-get install -y build-essential chrpath git-core libssl-dev libfontconfig1-dev
-
-echo "************************************************************"
-echo "Installing phantomjs - this may take a while (20+ min)"
-echo "************************************************************"
-
-git clone git://github.com/ariya/phantomjs.git
-cd phantomjs
-git checkout 1.9
-sudo ./build.sh --confirm
+sudo apt-get install -y build-essential chrpath git-core libssl-dev libfontconfig1-dev vim
 
 # for ruby 2.0 http://www.ubuntuupdates.org/ppa/brightbox_ruby_ng_experimental
 echo "************************************************************"
@@ -101,3 +92,5 @@ echo "Installing ffmpeg and extras"
 echo "************************************************************"
 sudo apt-get install -y ffmpeg
 sudo apt-get install -y libavcodec-extra-53 libavdevice-extra-53 libavfilter-extra-2 libavformat-extra-53 libavutil-extra-51 libpostproc-extra-52 libswscale-extra-2
+
+sudo apt-get autoremove
